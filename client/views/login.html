@@ -1,0 +1,12 @@
+<div class="container" data-ng-controller="LoginCtrl as loginCtrl">
+    <form ng-submit="loginCtrl.login()" class="form-sigin">
+        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+        <label for="email" class="sr-only">E-mail</label>
+        <input type="text" ng-model="loginCtrl.user.username" class="form-control" placeholder="Usuário" required autofocus>
+        <label for="password" class="sr-only"></label>
+        <input type="password" ng-model="loginCtrl.user.password" class="form-control" placeholder="Senha" required>
+
+        <br>
+        <button type="submit" class="btn btn-primary">Logar</button>
+    </form>
+</div>

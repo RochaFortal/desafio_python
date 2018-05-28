@@ -1,0 +1,12 @@
+<div class="container" data-ng-controller="CreateUserController as userCtrl">
+    <form ng-submit="userCtrl.save()" class="form-sigin">
+        <h1 class="h3 mb-3 font-weight-normal">Cadastro de Usuários</h1>
+        <label for="username" class="sr-only">Usuário</label>
+        <input type="text" ng-model="userCtrl.user.username" class="form-control" placeholder="Nome de Usuário" required autofocus>
+        <label for="email" class="sr-only">E-mail</label>
+        <input type="email" ng-model="userCtrl.user.email" class="form-control" placeholder="E-mail" required autofocus>
+        <label for="password" class="sr-only"></label>
+        <input type="password" ng-model="userCtrl.user.password" class="form-control" placeholder="Senha" required>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+</div>
